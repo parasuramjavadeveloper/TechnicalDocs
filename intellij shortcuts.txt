@@ -1,0 +1,182 @@
+YouTube Link  to download and install Intellij on windows :    https://www.youtube.com/watch?v=lTpjNHz3D14
+
+Commands :
+
+DoubleShift  ------> To search everywhere
+Ctrl + Shift + N  ------> Go to file
+Ctrl + E ----------> View Recent Files 
+Alt + Home  -----------> Navigation Bar
+
+CTRL + /     -------------> To comment/uncomment a line .
+CTRL + Shift + /      --------------> To comment/uncomment block of code.
+CTRL + Y     ------------> To delete a line
+
+Ctrl+Shift+A  --------->  Find Action
+      Find a command and execute it, open a tool window or search for a setting.
+
+Ctrl+N                   ----------> Find a class,
+Ctrl+Shift+N         -----------> Find a file,
+Ctrl+Shift+Alt+N   ------------> Find a  symbol
+  Find and jump to the desired class, file, or symbol.
+
+Double Ctrl     --------->  Run Anything
+  Execute commands, such as opening a project, launching a run/debug configuration, running a command-line utility, and so on. The available commands depend on the set of plugins and tools you have configured for your project.
+
+
+Alt+Enter	  ----------->  Show intention actions
+  Improve or optimize a code construct.
+
+Ctrl+Space   ---------->  Basic code completion
+   Complete names of classes, methods, fields, and keywords within the visibility scope.
+
+Ctrl+Shift+Enter ------------->Complete current statement
+   Insert any necessary trailing symbols and put the caret where you can start typing the next statement.
+
+Ctrl+Alt+L	    ----------->  Reformat code
+
+Ctrl+ shift  + Alt+L	    ----------->  To show Reformat dialog
+   Reformat the whole file or the selected fragment according to the current code style settings.
+
+Ctrl+W              -----------> Extend selection
+Ctrl+Shift+W     ----------->   shrink selection
+  Increase or decrease the scope of selection according to specific code constructs.
+
+Ctrl+/            ----------> Add/remove line  comment
+Ctrl+Shift+/   --------> 	Add/remove block comment
+   Comment out a line or block of code.
+
+Ctrl+Shift+F7  ----------->  Highlight usages in a file
+   Highlight all occurrences of the selected fragment in the current file.
+
+
+Ctrl + Shift + Alt + T   --------> To show refactor list.
+
+ctrl+h    ---------->  show the type hierarchy
+
+ctrl+alt+F7   ---------> 	find usages
+
+ctrl+f7      ----------->	finds the usages in the same file
+
+shift+F6	   -----------> To Rename
+
+ctrl+shift+F10    ----------> To run (java program)
+
+ctrl+alt+O	   ----------->  organize imports
+
+ctrl+F12	-----------> To show current file structure / outline
+
+ctrl+alt+V	   ------------> To create local variable refactoring
+
+ctrl + shift + up/down   --------> To move lines
+
+ctrl + shift + f  ----------> To search (find in path) in whole project
+
+alt + h	------------>  To show subversion history
+
+ctrl + shift + enter    -------------->  It automatically completes the code statement you are typing, inserting the quotation marks, brackets, curly braces and other punctuation as necessary.
+alt + insert	   --------------> To generate getters / setters
+
+ctrl + B   ----------> Go to Declaration.
+
+ctrl + g  ----------->  Go to line
+
+ctrl + Alt + Left  ----------> To go back/previous to where we are
+
+ctrl + Alt + Right   ----------> To go forward again
+
+ctrl + Alt + B   ----------> GO to Implementation
+   Press it when the caret is at the method name of an interface, and you get a pop-up list of all the places where this method is implemented, and you can select which one you want to go to (if there is only one implementation, you go straight there). The same goes for overridden methods.
+
+ctrl + U  --------> Go to super-methods/super-class
+   If the caret is at the implementation of a method in an interface (indicated by the little green interface-symbol in the left gutter), this shortcut takes you to the interface itself.
+
+ctrl + P  --------> Parameter info (within method call arguments)
+
+ctrl +  F  ---------> To search in the current file
+
+Alt + C , N   ----------> To show changes view
+
+Alt + C , S, Y   -----------> To compare with the same repository version
+
+ctrl + shift + space ---------> smart compeltion
+
+ctrl + Alt + T   -----------> surrond with code block
+
+shift + Delete   ----------> To delete th entire line
+
+Ctrl+Shift+J    ------------> To join lines (pull content of next line up to current line).
+
+Ctrl + Shift + Backspace   ------------->  Go to most recent code edit. Hit again to go even further back. Very useful when coding something, browsing other classes for a while and then wanting to go back where we left our code.
+
+Ctrl+Shift+E --------->  Recently edited files
+
+Ctrl+Shift+V --------->  paste one of the previous values from clipboard
+
+Ctrl + F11    ----------> Invokes a dialog with all alphanumeric keys on the keyboard. Selecting one empty will add the current line to bookmarks and mark the line with selected key.
+
+Shift + F11    ----------> Invokes a list of bookmarks. Pressing a key takes to associated bookmark.
+
+F7 , F8 , F9  ------------> For debugging
+
+Ctrl+Shift+F12 ---------> Toggle tools (maximize/minimize code window).
+
+Ctrl+ mouse over code  ------->	Brief Info
+
+Ctrl+F1	--------------->  Show descriptions of error or warning at caret
+
+Ctrl+O	------------------->  Override methods
+
+Ctrl+I	---------------->  Implement methods
+
+Ctrl+F6 ------------->	Change Signature
+
+Ctrl+Alt+N	  ------------->  Inline variable
+
+Ctrl+Alt+M  -----------------> Extract Method
+
+Ctrl+Alt+V	    -------------> Extract Variable
+
+Ctrl+Alt+F  ------------>  Extract Field
+
+Ctrl+Alt+C  ----------->  Extract Constant
+
+Ctrl+Alt+P	      ------------->  Extract Parameter
+
+Alt+Delete    -----------> Safe Delete
+
+Ctrl+R   -------------> Replace
+
+Ctrl+Shift+R  -------------> Replace in path
+
+Ctrl+F9	--------------------> Make project (compile modifed and dependent)
+
+Ctrl+Shift+F9  ----------------> Compile selected file, package or module
+
+Alt+Shift+F10  ----------------> Select configuration and run
+
+Alt+Shift+F9 ----------------> Select configuration and debug
+
+Ctrl+K ---------------->  Commit project to VCS
+
+Ctrl+T  ---------------->	Update project from VCS
+
+Alt+Shift+C  ---------------->  View recent changes
+
+Alt+`  ----------------> ‘VCS’ quick popup
+
+F8  ----------------> Step over
+
+F7  ----------------> Step into
+
+Shift+F7	---------------->  Smart step into
+
+Shift+F8	----------------> Step out
+
+Alt+F9	----------------> Run to cursor
+
+Alt+F8	----------------> Evaluate expression
+
+F9	----------------> Resume program
+
+Ctrl+]/[	----------------> Move to code block end / move to code start
+

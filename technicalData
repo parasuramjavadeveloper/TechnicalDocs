@@ -4,3 +4,5 @@ Merge git branch into Master :- https://stackabuse.com/git-merge-branch-into-mas
 select attachmentId into Sample from attachment where filePath not like '%pdf%' and filePath not like '%doc%' and filePath not like '%xls%' and filePath not like '%jpg%' and filePath not like '%png%' and filePath not like '%jpeg%' and filePath not like '%xlsx%' and filepath not like '%txt%' and filepath not like '%gif%' and filepath not like '%rtf%' and filepath not like '%sql%' and filepath not like '%tif%' and filepath not like '%msg%' and filepath not like '%htm%' and filepath not like '%zip%' and filepath not like '%dwg%' and filepath not like '%exe%' and filepath not like '%aspx%' and filepath not like '%docx%' and filepath not like '%bmp%' and filepath not like '%lnk%'  and filepath not like '%eml%'  and filepath not like '%fdf%' and FileName not like '%mht%' 
 update attachment set filePath=null where attachmentId in (select AttachmentID from sample)
 https://medium.com/trabe/fitting-the-artifact-size-in-spring-boot-applications-2b1da22a709e --springboot jar size reducing.
+
+Angular Pipes :- https://angular.io/guide/pipes

@@ -6,3 +6,5 @@ update attachment set filePath=null where attachmentId in (select AttachmentID f
 https://medium.com/trabe/fitting-the-artifact-size-in-spring-boot-applications-2b1da22a709e --springboot jar size reducing.
 
 Angular Pipes :- https://angular.io/guide/pipes
+
+Microservices Interview questions youtube link :- https://youtu.be/G0waumbpK48

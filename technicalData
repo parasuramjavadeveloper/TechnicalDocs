@@ -10,3 +10,83 @@ Angular Pipes :- https://angular.io/guide/pipes
 Microservices Interview questions youtube link :- https://youtu.be/G0waumbpK48
 
 Springboot with HTTPS link :- https://www.youtube.com/watch?v=rm9OKTSm-4A
+
+
+
+SELECT d.name,COUNT(*) FROM employee e INNER JOIN department d ON d.id = e.dept_id GROUP BY d.name ORDER BY COUNT(*) DESC; - oracle 
+
+
+
+SELECT d.name,COUNT(*) as count FROM employee e INNER JOIN department d ON e.dept_id= d.id GROUP BY d.name ORDER BY COUNT(*) DESC; - wrong 
+
+SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTER JOIN employee e ON e.dept_id= d.id GROUP BY d.name) ORDER BY empcount DESC,name;
+
+
+  this.orderPipe.transform
+  
+  
+  391268
+  
+  Optional<Order> optionalOrder = t.getOrder();
+  
+  Optional its a final class .
+  
+  Optioanl.of(Order);
+  Optional.ofNullable(Class s);
+  
+  why LocalDate is used ? 
+  
+  Ans) Its detects Local Time Zone   --- 
+  
+  Diffrent JPA and Hibernate ..
+  
+  Hibernate is ORM framework 
+  
+  Load method gives Proxy object instead of real object 
+  
+  Performance is slow in JPA 
+  
+  JPA - Hibernate - JDBC - Queries 
+  
+    Hibernate 
+	
+	Configuration obj = SessionFactory 
+	
+	Session s = SessionFactory.getSession();
+	
+	When  SessionFactory will close ?
+	
+	@Service or @Controller @Repository @Component 
+	class X
+	
+	
+	class Y 
+	
+	@Autowired
+	 X x;
+	
+	
+	
+	In Spring how it create beans or autowire .
+	
+	How will u create datasource in spring mvc 
+	
+	 dta
+	 
+	 @Bean
+	 private DataSource d =new DataSource();
+	  globalsession 
+	  session 
+	  singleton 
+	  prototype 
+	  request 
+	  
+	  class A 
+	  B b = new B(A a,C c);
+	  class B 
+	  private A a; - 100 objets 
+	  class C 
+	
+	
+	
+	

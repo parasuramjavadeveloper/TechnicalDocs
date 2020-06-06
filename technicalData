@@ -91,5 +91,24 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	https://dzone.com/articles/easy-javascript-part-13-four-ways-to-create-object#:~:text=There%20are%20four%20ways%20to,The%20Object.
 	https://www.w3schools.com/js/js_object_properties.asp
 	Javascript Closure :- https://www.youtube.com/watch?v=yiEeiMN2Khs
+	Closure function 
+  function Person(pName){
+  
+     var _name=pName;
+	 
+	 this.getName = function(){
+	 
+	    return _name;
+	 }
+  
+  
+  }
+ var me = new Person("Parasuram");
+ me.getName();
+	
+	
+	
+	
+	
 	
 	

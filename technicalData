@@ -87,6 +87,8 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	  private A a; - 100 objets 
 	  class C 
 	
-	
+	Javascript Interview Questions :- https://www.youtube.com/watch?v=kl2bM9e-jJc
+	https://dzone.com/articles/easy-javascript-part-13-four-ways-to-create-object#:~:text=There%20are%20four%20ways%20to,The%20Object.
+	https://www.w3schools.com/js/js_object_properties.asp
 	
 	

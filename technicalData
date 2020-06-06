@@ -136,6 +136,7 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
    me.name; // it gives undefined 
    me // empty person object	
 	
+	Diff Let and Var in Javascript :- https://www.youtube.com/watch?v=XgSjoHgy3Rk
 	
 	
 	

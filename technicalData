@@ -108,6 +108,34 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	
 	A JavaScript closure is a function that has a pointer reference to a free variable. A free variable is one that has fallen out of scope after its parent function has returned. However, if that outer function still has some reference to the free var (normally through a function that gets returned, or through a method property), the variable will not get garbage collected because it will have a non-zero reference count.
 	Thus, from outside the function, we can still access the inner variable by means of the closure.
+ Object Property access  
+  function Person(pName){
+  
+     this.name =pName;
+	 
+	   
+  
+  }
+    
+  var me = new Person("Parasuram");
+   me.name;
+   
+   
+   
+   Variable name has no access outside function
+   
+   function Person(pName){
+  
+     var name =pName;
+	 
+	   
+  
+  }
+    
+  var me = new Person("Parasuram");
+   me.name; // it gives undefined 
+   me // empty person object	
+	
 	
 	
 	

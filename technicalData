@@ -140,5 +140,11 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	
 	Diff Local Storage & Session Storage https://www.youtube.com/watch?v=MOd5cTJ6kaA
 	
+	CORS ISSUE 
+	
+	https://www.youtube.com/watch?v=wMXU3dQWoOI
+	https://www.youtube.com/watch?v=7h6htdxwBZA
+	https://www.youtube.com/watch?v=Whgr8DKfs6U
+	https://www.youtube.com/watch?v=7h6htdxwBZA
 	
 	

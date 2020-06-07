@@ -149,7 +149,17 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	
 	ReactJs Udemy Stuff 
 	https://codepen.io/anon/pen/MELQaQ - example 1
-	
+	Javascript editor
+http://jsbin.com/?html,js,console
+Splice method in arrays
+var array=[1,2,3,4,5];
+console.log(array.splice(3,4));
+console.log('array elements are' + array);
+Output :- 4,5 
+          1,2,3
+Splice method returns the removed items from the array 
+Here array.splice(3,4) . 3,4 are the indexes names of the array . its indexes values are array[3]=4 array[4]=5.
+ 
 	
 	
 	

@@ -147,4 +147,9 @@ SELECT * FROM (SELECT d.name,COUNT(e.id) as empcount FROM department d LEFT OUTE
 	https://www.youtube.com/watch?v=Whgr8DKfs6U
 	https://www.youtube.com/watch?v=7h6htdxwBZA
 	
+	ReactJs Udemy Stuff 
+	https://codepen.io/anon/pen/MELQaQ - example 1
+	
+	
+	
 	

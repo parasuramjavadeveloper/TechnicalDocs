@@ -155,11 +155,23 @@ Splice method in arrays
 var array=[1,2,3,4,5];
 console.log(array.splice(3,4));
 console.log('array elements are' + array);
+
 Output :- 4,5 
           1,2,3
 Splice method returns the removed items from the array 
 Here array.splice(3,4) . 3,4 are the indexes names of the array . its indexes values are array[3]=4 array[4]=5.
  
+var array=[8,42,32,41,58];
+console.log(array.splice(3));	
+Slice method in Javascript 
+Link :- https://www.youtube.com/watch?v=QdwLGI1yNrk 
+Slice method slice the elements according to the range and number you specified and returns new array with those indexes values .
+ var array=[8,42,32,41,58];
+ console.log(array.slice(3));
+ Output :- 41,58
+ var array=[8,42,32,41,58,5,7,21,44,65,63,78,79,3,11];
+ console.log(array.slice(3,6));
+ Output :- 41,58,5
 	
 	
 	

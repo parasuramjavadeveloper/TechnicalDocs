@@ -173,5 +173,21 @@ Slice method slice the elements according to the range and number you specified 
  console.log(array.slice(3,6));
  Output :- 41,58,5
 	
+	ELK Stack 
+	
+	 Springboot with Elastic Search :- https://www.youtube.com/watch?v=O5ou6lBwWYw 
+		   https://www.javainuse.com/spring/springboot-microservice-elk
+		   elasticsearch :- http://localhost:9200/
+		   get call :- localhost:9200/logstash-2020.06.05-000001/_search  --> for logs 
+		   get call :- localhost:9200/_cat/indices/?v
+		   
+		   kibana UI Dashboard :- http://localhost:5601/app/kibana
+		   
+		   logstash :- http://localhost:9600/
+	
+	
+	
+	
+	
 	
 	

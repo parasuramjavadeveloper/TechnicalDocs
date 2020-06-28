@@ -185,6 +185,7 @@ Slice method slice the elements according to the range and number you specified 
 		   
 		   logstash :- http://localhost:9600/
 	Springboot with cassandra database :- https://www.youtube.com/watch?v=JmwcGJP3pzM&pp=wgIECgIIAQ%3D%3D&feature=push-sd&attr_tag=speoxsjmCcWahQQT%3A6
+	https://github.com/shameed1910/springboot-cassandra-docker
 	
 	
 	

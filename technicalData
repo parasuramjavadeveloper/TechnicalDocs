@@ -190,6 +190,7 @@ Slice method slice the elements according to the range and number you specified 
 	AKKA tool
 	Akka is a free and open-source toolkit and runtime simplifying the construction of concurrent and distributed applications on the JVM. Akka supports multiple programming models for concurrency, but it emphasizes actor-based concurrency , with inspiration drawn from Erlang .
 	
-	
+	Helm Charts
+	https://tech.paulcz.net/blog/spring-into-kubernetes-part-2/
 	
 	

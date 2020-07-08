@@ -180,3 +180,7 @@ F9	----------------> Resume program
 
 Ctrl+]/[	----------------> Move to code block end / move to code start
 
+Disbale unit tests in Intellij :- https://www.jetbrains.com/help/idea/work-with-tests-in-maven.html#skip_test
+
+
+

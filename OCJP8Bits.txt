@@ -1,0 +1,99 @@
+Hi
+
+1) 
+
+package com.java8;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class Test {
+    public static void main(String[] args) throws InterruptedException {
+
+        Callable<String> c = new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+
+                }
+                return "Hello";
+            }
+        };
+        ExecutorService es = Executors.newFixedThreadPool(10);
+        List<Callable<String>> list = Arrays.asList(c, c, c, c, c);
+        List<Future<String>> futures = es.invokeAll(list);
+        System.out.println(futures.size());
+        es.shutdown();
+
+
+    }
+
+
+}
+
+Which of the following statement is correct about above code? 
+
+1) Program will print 5  in less than  3 secs 
+2) Program will always print 5  in exactly 3 secs  
+3) Program will print 5  in  any  time greater than  or equal to 3 secs. Answer 
+
+2) 
+
+package com.java8;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+class Book {
+    String title;
+    String author;
+    double price;
+
+    public Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+
+    public String getAuthor() {
+        return this.author;
+    }
+
+    public String toString() {
+
+        return "{" + title + "," + author + "," + price + "}";
+    }
+}
+
+
+public class Test {
+    public static void main(String[] args) throws InterruptedException {
+
+        List<Book> books = Arrays.asList(
+                new Book ("Head First Java", "Kathy Sierra", 24.5),
+                new Book ("OCP", "Udayan Khattry", 20.99),
+                new Book ("OCA", "Udayan Khattry", 14.99));
+        books.stream().collect(Collectors.groupingBy(Book::getAuthor)).forEach((a,b) ->System.out.println(a));
+    }
+
+
+}
+
+What will be the result of compiling and executing Test class? 
+
+Output :- 
+Kathy Sierra
+Udayan Khattry
+
+
+
+
+ 

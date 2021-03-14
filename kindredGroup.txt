@@ -1,0 +1,1051 @@
+  1) Tell about your self ?
+  ans) Im Parasuram full stack developer  worked on struts,spring,and springboot,restful,jms,kafka,jpa,nosql,sql,jdbcTemplate,
+  microservices,front end technolgies Angular5,Reactjs and cloud aws,DevOps,CI/CD Jenkins,Docker and Kubernetes.
+  
+  2) Tell me about your last project ?
+  ans) my Last project was Ercisson Dynamic Activation where ericsson provides 2g,3g,4g and 5G services to their customers.
+  Involved in the development of microservices using springboot,jpa,restful webservices development.
+  
+  I have worked on microservices like 1) orders processor :- Create an order for different product types like 2g,3g,4g and 5g.
+  2) replicator service :- Basically it checks the customer orders and process the customer orders renewals after the specified amount 
+  of time and sends remainder emails for their renewals. 
+  3) Orders Optimizer :- it picks the high order or priority orders and processes them first .
+  4) orders gateway microservice open for UI api requests and naviagte requests to respective microservice.
+  
+  4) we have login portal where ericsson customers will use that portal and order the services .we have used OAuth2 for authentication and authorization.
+  5) 
+  
+  3) How you verify the logs of your microservices ?
+  ans) Using Splunk and Using Loki datasource in Grafana,Prometheus
+   seever -ami backup - ami --
+   server - live and ruuning-- 
+   10 seconds - UP -10 seconds -
+   
+   lakhs of requets - 
+   
+   loadbalancer and auto scaling services -10 servers --
+   
+  Docker and Kubernetes -
+  
+  application - 20 pods up 
+  10 pods - 
+  Valid Discussion 
+    ---> project shipment number -- 
+	item create - tag ,item id --
+	DevOps Enginner -- Prod down - 0 zero down time , 
+	
+  
+  4) How can you see the microservices metrics ?
+  ans) Using Prometheus metrics in Grafana.
+  
+  5) Can you please tell me about Kubernetes used in your application ?
+  
+  ans) we have deployment and service objects yaml for deployment of pods .
+  
+  deployment yaml where we give docker image,containers,replicas and service yaml expose the port and it contains nodePort and targetPort.
+  
+  kubectl apply -f deployment.yaml   service.yaml 
+  
+  +1 +1 ---
+  
+  adding client technical teams 
+  
+  +1 +1 
+  
+  code merge 
+  
+  
+  6) Incident handling - support code in production? 
+
+Production Support Team - Reported 
+
+within 12 Hours - Development Team 
+
+Client Side Technical team verified prod logs ---
+
+Ans) int or Integer - 10 digits
+customer account number - 15 digits 
+RegionCode - 7 digit number 
+
+account number coming in string in json object 
+
+after login customer when he performs this adding int or Integer 
+
+Exception :- NumberFormatException when convert string from json to Wrapper Integer 
+
+solution :- Double data type 
+
+Client Requrement :- account number should store in Integer 
+
+ Added Validations to accept 10 digits in UI. 
+ 
+ Range :-  2,147,483,647 - 10 digits 
+ 3,147,483,647 - out of range in Integer 
+ 
+ Double Range :-  1.7976931348623157 x 10Power308
+ 
+ Long Range :- 9,223,372,036,854,775,807 
+ 
+ 
+ 
+ size related issue 
+ 
+ string data -- data too large 
+ column - shopmentName - varchar(100) - databse oracle 
+ ora error code --related like this 
+ 
+  ---- issue -- no column in database  prod 
+  
+  --- regression testing --
+  
+       @Transient 
+       private String name- no databse column --  entity 
+	   
+	   field data in test env - create proeprty file - application.properties 
+	   
+	   @Transactional(Propagation.Required) 
+	   public Item create(Item item) { //
+	   
+	    try{
+	     Item item = jpaReposity-save(item)
+		 
+		 }
+		 catch(Exception exception)
+		 {
+		 
+		 }
+		 
+		  Builder buider
+          
+saveDataInSplunk(builder);
+
+}		  
+		  splunkService.saveData(builder);
+	   
+	   
+	   StringBuilder -Its Not Synchroized VS StringBuffer -- Synchroized --
+	   
+	   multthreading env --
+	   
+	   lot of requests waiting -- 
+	   
+	   @Transactional
+	   Parallel process - threads -- 
+	   
+	   in seconds -- multiple requets achiieve by using Transactional .
+	   
+	   
+		 
+		 
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  Entity JPA/Hibernate - 
+  
+  we cannnot apply Profiles to entity since it not create bean for us by spring 
+  
+  
+  branch - dev 
+  
+  prod 
+  
+  test 
+  
+  ----- 
+  
+   @Profile({"Dev","Test"})
+  ItemController -Rest --  dev 
+  test ,prod
+
+ Under spring 
+
+ @Service
+ @Repository
+ @Component
+ @RestController
+ varibles,methods  
+
+   
+  
+  7) Describe a work situation/ challenge/ task/ performance you are proud of - technically? 
+
+  10,000 motor images dotnet - db byeArray 
+
+  Java - Read -  
+  
+  Solution :- 
+  
+  Java Program 
+  
+  read byte and create images using fileoutput stream and stire in awss3 bucket ..
+  
+  isNew - false -old attachments 
+  
+  isNew - true - 
+  
+   8) Pessimistic Locking VS Optimistic Locking ?
+   Ans)
+  
+  Pessimistic Locking is better when you have more updates . since lock is database object level.
+  
+  Optimistic Locking is better when you have more reads(Cache memory when there is no update) and less updates .
+  
+  9) What are Higher-Order Components?
+A higher-order component (HOC) is a function that takes a component and returns a new component. Basically, it's a pattern that is derived from React's compositional nature.
+
+We call them pure components because they can accept any dynamically provided child component but they won't modify or copy any behavior from their input components.
+
+const EnhancedComponent = higherOrderComponent(WrappedComponent)
+HOC can be used for many use cases:
+
+Code reuse, logic and bootstrap abstraction.
+Render hijacking.
+State abstraction and manipulation.
+Props manipulation.
+
+10) What are the different caches are available in java ?
+ans) Clustered Cache Hazelcast :- https://reflectoring.io/spring-boot-hazelcast/
+     Caffeine cache :- https://www.baeldung.com/spring-boot-caffeine-cache 
+
+Managerial questions like:
+11) Define your normal work day in previous assignment?
+
+12) How do you take on constructive feedback?
+
+
+13) How do you deliver constructive feedback?
+
+
+14) How do you deal with unclear requirements?
+
+
+15) Tell me about two improvements you have made in the last six months? Technical and Personal ?
+
+   TracRat - Prod - manual testing -
+   
+   prod - verfication - automation scripts for prod ,
+   
+   task - coding - task,Junits ,
+   
+   
+   
+16) Are you having experience of communicating with various stakeholders.
+
+17) What questions do you have regarding the role / team / company?	 
+
+Skillset:
+MicroServices
+Event Driven Architecture
+Error Handling
+Caching - SpringBoot Cache spring-boot-starter-cache 2.3.8 and @EnableCaching at main class
+Clustering 
+SpringBoot latest version 2.3.8 
+Docker
+Kubernetes
+Http REst 
+Integration testing by @SpringBootTest,H2 and MockMVC
+Performance testing by Jmeter 
+
+18) explain the architecture of OAuth2 in your application ?
+
+19) explain Microservices architecture ?
+
+20) What is dependency injection in spring ?
+Ans) Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container "injects" objects into other objects or "dependencies".
+ Simply put, this allows for loose coupling of components and moves the responsibility of managing components onto the container.
+ 
+ Setter Injection vs Constructor Injection ?
+ 
+
+21) What is Subject in Angular ?
+Subject is a special type of  an Observable but it multicast to multiple observers. What is a Subject? An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers. ... 
+A Subject is like an Observable, but can multicast to many Observers.
+
+22) What are the solid principles of microservices?
+
+
+23) Which Design Patterns used in your microservices applications ?
+Ans) We are using Aggregator Design Patterns.
+
+https://vslive.com/Blogs/News-and-Tips/2018/02/Go-Fast-by-Going-Micro-Microservices-Design-Patterns-You-Should-Know.aspx#:~:text=%22Aggregator%20Microservice%20Design%20Pattern%3A%20The,functionality%20required%20by%20the%20application.
+
+24) How can you pass headers in xml ?
+Ans) https://stackoverflow.com/questions/24243056/writing-http-headers-in-xml/24314160
+
+25) Which character encoding to pass headers data in xml ?
+Ans) UTF-8 
+
+26) Error Handling in Kafka 
+	 
+	https://stackoverflow.com/questions/57066995/error-handling-consumer-apache-kafka-and-spring
+	
+	https://dzone.com/articles/spring-for-apache-kafka-deep-dive-part-1-error-han 
+	
+27) Java 15 feature 
+
+ Record 
+
+Using the new record class, we can define the same immutable data object in a much more compact way:
+
+public record Person(String name, int age) {
+}
+A few things have happened here. First and foremost, the class definition has a new syntax that is specific for records. This header is where we provide the details about the fields inside the record.
+
+Using this header, the compiler can infer the internal fields. This means we don't need to define specific member variables and accessors, as they're provided by default. We also don't have to provide a constructor.
+
+Additionally, the compiler provides sensible implementations for the toString, equals, and hashCode methods.
+
+While records eliminate a lot of boilerplate code, they do allow us to override some of the default behaviors. For example, we could define a canonical constructor that does some validation:
+
+public record Person(String name, int age) {
+    public Person {
+        if(age < 0) {
+            throw new IllegalArgumentException("Age cannot be negative");
+        }
+    }
+}
+
+28) Sealed class 
+
+3. Sealed Classes (JEP 360)
+Currently, Java provides no fine-grained control over the inheritance. Access modifiers such as public, protected, private, as well as the default package-private, provide very coarse-grained control.
+
+To that end, the goal of sealed classes is to allow individual classes to declare which types may be used as sub-types. This also applies to interfaces and determining which types can implement them.
+
+Sealed classes involve two new keywords — sealed and permits:
+
+public abstract sealed class Person
+    permits Employee, Manager {
+ 
+    //...
+}
+In this example, we've declared an abstract class named Person. We've also specified that the only classes that can extend it are Employee and Manager. 
+Extending the sealed class is done just as it is today in Java, using the extends keyword: 
+
+29) Kafka Interview Questions 
+
+https://www.edureka.co/blog/interview-questions/top-apache-kafka-interview-questions-for-beginners/
+
+
+30) diff Normalization and denormalization ?
+
+https://www.tutorialspoint.com/difference-between-normalization-and-denormalization
+
+
+Vehicle --
+
+ManyToOne 
+JoinColumn
+Category category
+
+ManyToOne 
+JoinColumn
+VehicleType vehicleType
+
+VehicleType 
+car  ,id 
+truck ,id 
+lorry,id 
+crane ,id 
+
+Category -
+
+id   1, 2
+name HeavyWeight ,LightWeight 
+
+31) For which types of applications JDBC Template is feasable or JPA is feasable ?
+
+Link :- https://stackoverflow.com/questions/4573975/jpa-vs-spring-jdbctemplate
+
+Use Spring JdbcTemplate if you don't want to access your database schema via a domain model. Using JdbcTemplate you are using a lower level access, with more flexibility, but probably also more boilerplate.
+
+Spring JdbcTemplate can be more easily used with exotic database schemas and a stored procedure focus. Using JPA you need to make sure that database schema maps correctly to the domain model.
+
+Both technologies need developers knowing relational databases, SQL and transactions. With JPA you get more hidden complexity though.
+
+JPA is to my knowledge more easily pluggable to data caching layers, since the object oriented focus makes cache entry identification, update and invalidation easier.
+
+You can fine tune JdbcTemplate based backends better, but there is for most cases more code involved.
+
+Some other aspect to consider is that although with JPA you get a domain model for your database schema you will often need to use additional DTO classes. Using JdbcTemplate you can directly operate with DTO classes.
+
+
+I'm a bit late to this post, but I tend to use JdbcTemplate over ORM. I know SQL (pretty well) and really don't want to be "abstracted" away from my DB. I find most of the time, my apps are using DB views where I push most business logic up to. I have properly layered DAOs that have JdbcTemplate implementations. It feels "clean" and most boilerplate code is hidden by JdbcTemplate (and it's online documentation seems MUCH better then ORM stuff). The limited time I've used something like Hibernate, I found when it worked, it save me some time...but when it wasn't working properly, it cost me days of "WTF" debugging. I've never had to spend more then 20 minutes debugging JdbcTemplate DAO impls. I think the key, as others noted, is how comfortable you are with SQL / Schema Design.
+
+
+
+I agree with @Timo. The only other insight I would add/expand upon is that ORM has different semantics from pure sql access to your data.
+
+The point of ORM is to abstract away the fact that your data is in a DB at all, as much as possible. When you use ORM properly, all persistence operations are dealt with in one (hopefully) thin layer. Your model objects will have little to no persistence code; the fact that you are using ORM should be invisible to your model.
+
+Because of this, ORM is very good at making your life easy for certain types of operations, namely simple CRUD operations. You can load your model objects, present them, update them, delete them quite easily. It makes your life easier because when you access your data, you get model objects back, on which you can write business logic. If you use JDBC, you will have to 'hydrate' your object instances from the data, which can be complicated and error-prone.
+
+ORM is not always the best choice. JPA is a tool for a job, if the tool is not sufficient for the job you will want to find a better tool. For example, I had a scenario where I had to copy an entire object graph and save a new copy of those objects. If I had used ORM (like I tried to do), I had to load all the objects out of the DB, then copy them, then save the new objects. I took way too long.
+
+The better solution was simply to use jdbc based operations and 'insert via select' sql calls to create the new rows. It was fast, the code was simpler.
+
+The other thing to consider is that you are comfortable with JDBC, and have deadlines, you don't have to jump on the ORM bandwagon. The Spring JdbcTemplate classes are extremely powerful and helpful. Sometimes the best tool for the job is the one you know. You should familiarize yourself with ORM, but not necessarily for a project with high expectations. There is a lot to learn and its not trivial -- really you are trading one set of complexities with another in the choice to use jdbc vs orm.
+
+
+
+
+
+    
+
+32) Vehicle  -> Car and Truck -
+Car can be heavy weight car or light weight car  
+Truck can be heavy weight truck or light weight truck 
+
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "VEHICLE")
+/**
+ * Persistent class for Vehicle entity stored in table VEHICLE.
+ * @author Parasuram
+ * @since 15-01-2021
+ */
+public class Vehicle {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+    private String name;
+    private String model;
+    private String year;
+    private String vehicleType;
+    private String company;
+    private String engine;
+    private Integer noOfWheels;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "cat_id")
+    private Category category;
+
+
+}
+
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "CATEGORY")
+/**
+ * Persistent class for CATEGORY entity stored in table CATEGORY.
+ * @author Parasuram
+ * @since 15-01-2021
+ */
+public class Category {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+    private String name;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "category")
+    private List<Vehicle> vehicles;
+
+
+    public Category(String name) {
+        this.name=name;
+    }
+}
+
+33) Can you tell me what are the design patterns used and helps to code better and fulfil your requirement and how ?
+
+Ans) I have used Factory Design Pattern . For constructing different objects based on the different user requests.
+Fedex express shipment 
+Fedex fright  shipment 
+Shipment - Super class - Interface 
+if shipment is express than create express shipment object  
+else 
+fright shipment object 
+
+Shipment shipment = new ExpressShipment();
+
+TracRat Motors ordered by customers
+AC Motor
+DC Motor 
+Motor - Super class - Interface 
+if Motor is AC Motor than create AC Motor object  
+else 
+DC Motor object 
+
+Motor motor = new DCMotor();
+Motor motor = new ACMotor();
+
+Wellsfargo Bank Loans taken by customers
+LoanType1
+LoanType2
+Motor - Super class - Interface 
+if Motor is AC Motor than create AC Motor object  
+else 
+DC Motor object 
+
+Motor motor = new DCMotor();
+Motor motor = new ACMotor();
+
+ Singleton Design Pattern for JDBCConnection for application level . ConnectionUtils.java 
+ 
+ https://www.knowledgepowerhouse.com/why-java-lang-runtime-is-a-singleton-in-java/1360 
+ 
+      Dekstop class and java.lang.Runtime class in java api are singleton classes 
+ 
+ Abstract Factory Design Pattern
+ 
+  Used to create factories above the factories 
+
+  we have 5 regions America,Europe,Africa,Asia Pacific ,China Soviat used by applications entire globe 
+  
+   Global Shipment - Interface 
+   AmericaFactory america = new AmericaFactory(); 
+   than pass Express Shipment 
+   
+   Shipment shipment = new ExpressShipment();
+   
+   Europe
+   Africa
+   Asia Pacific
+   China Soviat
+   
+    Builder Design Pattern 
+	
+	https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/
+	
+	Builder Design Pattern with Java 8 :-  https://stackoverflow.com/questions/31754786/how-to-implement-the-builder-pattern-in-java-8
+	
+	Using Consumer<T> functional Interface .
+	
+	Used to create object with required fields .
+	
+	Person class 
+	
+	Student ,Employee ,Manager,
+	
+	only Getters no Setters 
+	
+	
+	TracRat Requrement 
+	
+	or Loan Types 
+	
+	
+	Item entity 
+	
+	
+	1) Tag Unique 2) Type 3) Location 4) status 
+	
+	Non Mandatory fields 
+	
+	Item Name, Warranty Type ,Description ..
+	
+	Adapter Design Pattern
+
+   https://www.baeldung.com/java-adapter-pattern	
+	
+	we get files needs to encrypt and send to users  
+	
+	zip format,rar format ,tar,strip and replace with special characters for encryption 
+	
+	Write  each Adapter for each encryption  
+	
+	flat file is normal text file with every line (0-255)256 characters 
+	
+	flat file - source -size - Min-10MB max-30GB.
+	
+	shipments -1000 -objects 
+	
+	100 - size 
+	
+	In betwwen placing this(FileOutputStream) for write flat file in one location and convert into zip file using java lib to convert file into zip file and sending to client .
+	
+	zip file should be destination 
+	
+	
+	AdapterClass 
+	
+	ZipAdaptor 
+	RarAdaptor
+	TarAdaptor
+	StripAndReplaceAdaptor 
+	
+	
+	source -flat file - destination - zip file 
+	source -flat file - destination - rar file 
+	source -flat file - destination - tar file 
+	source -flat file - destination - strip and replace with special characters for encryption  file.
+  
+    Wellsfargo - Facade design Pattern 
+	
+	https://howtodoinjava.com/design-patterns/structural/facade-design-pattern/ 
+	
+	why 10GB file logging in prod logs ?
+	
+	file - headers and trail information is huge 
+	
+	invoice price 
+	
+	10 GB file can be split into different file 
+	
+	challenge :- every file has header and trailer 
+	
+	segmentation :- 
+	
+	Aggregator Design Pattern for MicroServices 
+	
+	API Gateway Design Pattern for MicroServices  --- 
+	
+	https://microservices.io/patterns/apigateway.html
+	
+	
+	 
+	 MicroServices 
+	 
+	 
+	 @Qualifier("c")
+	 @Autowired
+	 A a;
+	 
+	 
+	 A interface 
+	 
+	 @Primary
+	 B class ,
+	 
+	 C class 
+	 
+	 @Bean
+	 getBean()
+	 {
+	 A b = new B();
+	 }
+	 
+	 @Autowired 
+	 private A b;
+	 
+	 
+	 @Autowired 
+	 private A a;
+	 
+	 
+	 We can override @Primary with @Qualifier  ----
+	 
+	 Spring and Java 8 
+	 
+	 
+	 any experience with TeamCity ?
+	 
+	 https://www.youtube.com/watch?v=-MrOb-2EtSw
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	
+
+    	
+    	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+   
+   
+   
+   
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+34) Explain about Docker Image and how it works and Interacts with Linux Machine ?
+
+35) For which applications JPA is better and JDBC is better ?
+read,write operations 
+
+ex:- facebook :- read operations ,write operations 
+JPA - Cache ,read -- Redis Cache -,write operations ,
+
+Cassandra - JPA -No Relations
+
+JDBC stored procedure - template 
+
+10 lines for jdbc 
+
+JDBC Template -3 lines 
+
+36) What are the improvements you given to your team ?
+
+Ans) 1) s3 attachments . 2) manual verfication - automation .
+3) api testing - rest assured for api automation framework 4) apache nifi - for scheduler jobs --- 
+1) pulll xml file from s3 for every 6 hours
+2) convert xml into json 
+3) sends json file to another application
+
+37) Tell me about agile way work and do you like it and why ?
+
+38) What are the differences between Hibernate and JDBC?
+Hibernate and Java Database Connectivity are two different approaches that developers can use to interact between a Java application and the database. Your answer should show the hiring manager that you understand these interfaces and know when to use them. You can name a few of the main differences between the two frameworks. 
+
+Example:  “In my experience, there are architectural differences between Hibernate and JDBC that impact usage. One of the main differences is Hibernation is an object-relational mapping, or ORM tool, while JDBC does not have an object-relational mapping mechanism.
+
+Hibernate’s programming language, Hibernate Query Language, has different functionalities when compared with the programming language used by JDBC, which is Structured Query Language, and this is another major difference. In terms of scalability, Hibernate is more scalable than JDBC.
+
+Another difference between the two relates to caching. Hibernate has a caching mechanism that retains data for use in the future when combined with its automatic object mapping functionality while JDBC has no built-in caching functionality. The startup performance of JDBC is slightly quicker than Hibernate.”
+
+39) What are the benefits of using Hibernate over JDBC?
+A Java architect must leverage the advantages of various technologies, such as the Hibernate and JDBC frameworks, to build the best systems. Your response should show you know the pros and cons of using each technology. Include the main advantages of using Hibernate by comparing the two interfaces.
+
+Example: “Hibernate uses the Hibernate Query Language or HQL, which is object-oriented, so I can rely on it to automatically update all the queries after changing the database. I need to manually update each query if I use JDBC, and there is a database change as JDBC uses the Structured Query Language or SQL, which is not object-oriented. Due to this architectural difference, JDBC is more difficult to use, and there is an increased risk for mistakes when compared with Hibernate.
+
+Hibernate gives me more flexibility when compared with JDBC due to the HQL features. While HQL supports both HQL and SQL, which allows me to work with several databases, SQL supports only SQL. It is also easier to migrate to a new database using Hibernate than JDBC. Hibernate also has faster performance than JDBC due to its caching functionality. When using JDBC, I need to write additional code as there is no caching mechanism.
+
+While JDBC can be used effectively for a small app used by a few people, it is not as scalable as Hibernate, which can be used for both small and large applications. This is a major benefit as scalability is essential for a smart web application that performs well despite facing a lot of traffic. In general, I find that Hibernate delivers better results when compared to JDBC.”
+
+40) JDBC Update record example 
+
+https://www.boraji.com/jdbc-update-record-example 
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * @author imssbora
+ */
+public class UpdateRecordExample1 {
+
+  public static void main(String[] args) {
+    String jdbcUrl = "jdbc:mysql://localhost:3306/BORAJI";
+    String username = "root";
+    String password = "admin";
+    String sql = "update employee set name='Michael Sam' where emp_id=1";
+
+    try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password); 
+        Statement stmt = conn.createStatement();) {
+      
+      stmt.executeUpdate(sql);
+      System.out.println("Database updated successfully ");
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
+}
+
+41) What wil happen if you dont close the connection in JDBC ?
+
+ans) Resource Leakage ,heap memory full, 
+
+default springboot connection pooling :- 
+1) database connections - 
+2) application level connection pooling - 10*50 = 500 connections
+50 rest apis 
+
+-  10 rest apis 
+
+1 - get item 
+2- advanced item search - hp -attribute name 
+
+list of motors ---   
+
+3) create item 
+
+4) get item 
+
+5) oauth2 
+
+6) item repair add 
+
+7) dashboard - 7 rest calls -- 
+
+8) add,edit ,delete and get location ..
+
+
+
+
+
+ 
+42) If you want to make improvements in our cloud environment what will you do ?
+
+Ans) I would introduce Helm Charts for Kubernetes Pods deployment to reduce multiply yaml files and easy deployment.
+       Add Kubernetes and Docker 
+	   Add automation scripts for Prod Deployment Verification for logs monitoring.
+	   Add Redux for Central Store 
+	   Add OAuth2 for Authentication and Authorization
+	   Add Swagger for API Documentation and Lombok to reduce the boilerplate code 
+	   ADD Profiles in springboot to deploy apps in multiple environments and easier CI/CD Process 
+	   ADD Write Jenkins Pipeline scripts 
+	   ADD Serverless architecture to hit the apis which are called very less number of times. Using AWS Lambda functions .
+	   
+
+43) How do you handle a conflict with a coworker on your usage of a Java system? 
+Handling conflicts is an important skill for a Java architect. Explaining the behavioral process you would use to handle this scenario can show a recruiter you can function well in a team. You can also use your answer to show your suitability for a future leadership role.
+
+Example: “I would use my active listening skills to understand my coworker’s disagreement on my usage of the Java system and show my colleague I respect their feedback. I would then review my usage and try to find out if there are problems that I may have missed in my procedure.
+
+I would use my education and work experience in Java, online Java resources and the Oracle support system to check if there are ways in which I could improve my usage by my coworker’s concerns. I would brief my supervisor or team leader about the pushback from my coworker immediately and ask for advice on the best way to handle the situation.
+
+Once I have the information I need, I would decide on whether a change in usage is necessary to improve my performance and meet my professional responsibilities. Once I made the decision, I would explain my decision to my coworker in a timely, professional and diplomatic manner.”
+
+44) Does using the Spring framework benefit Java developers?
+The Spring framework is a widely used development framework that supports the development of enterprise applications, including those that are built with Java. Your answer should show that you know how and when to use the Spring framework. You can mention four main benefits of using this framework in your answer. 
+
+Example: “Yes, the Spring framework offers several benefits. For instance, Spring is lightweight because you do not need to use an Enterprise Java Bean or EJB container to use it, and it can be used with Plain Old Java Objects or POJOs. Plus you have the option of using a sturdy Servlet Container. Spring’s lightweight feature enables me to build or deploy enterprise applications using computers that have limited resources in core areas such as memory.
+
+Another benefit of using Spring is that it is easy to use due to its modular architecture. For instance, while there are many options for classes and packages, I only need to focus on the ones that I need for my application. The fact that it functions as a layer on top of other technologies, such as ORM frameworks and logging frameworks, is another benefit to my work and process. It also uses components, such as templates, to provide boilerplate code that simplifies the development process.
+
+I can also use Spring with confidence as it has an efficient model-view-controller or MVC web framework. It is also a great framework to test projects due to its architecture which moves all the code that is environment-dependent into the framework and I can use POJOs like Java Beans to inject test data easily via dependency injection.”
+
+45) If you have a Java application with a database connection that needs to be improved, how would you improve it?
+A Java architect needs to understand how to troubleshoot the various issues that arise when handling enterprise architecture. Your response should prove that you can tackle this aspect of the job. You can answer this question by listing the methods that you would use to improve the connection. 
+
+Example: “If I am using ORM, I would review my ORM strategy, make changes to it if necessary and tune the database caching. Improving the database connection by optimizing the query, which I could do by rewriting the query if necessary, is another method that I would use to improve the connection. I would also restructure the indexes.”
+
+46) How do you avoid a database deadlock?
+A database deadlock occurs because too many resources have tried to access its locks, and an ideal candidate should know how to avoid typical usage issues such as this one. Your response should show your expertise in using Java architecture. You can list the three main ways in which this situation can be avoided. 
+
+Example: “To avoid the database from going into a cyclic wait stage, I would make a queue to verify each request before sending it to the database. Another way to avoid this issue is to use fewer cursors to avoid locking the tables. Using a small transaction is another technique to avoid a database deadlock.”
+
+47) What is sharding, and is it beneficial?
+Sharding is an approach used by web architects that involves using a collection of computers to distribute parts of a database system, and a Java architect needs to use this approach when necessary. Your answer should show that you know how to use sharding. You can briefly define sharding and outline its benefits and risks.
+
+Example: “The architectural approach of sharding involves dividing the tables in a database and storing them in separate machines, which function as separate databases and are called shards. There are benefits to using this approach.
+
+In my experience, improved scalability is the most important benefit. For instance, as sharding divides the tables and separately stores the data, the number of rows in each table is reduced, which reduces the index size and improves search performance. I can scale up or scale down a Java application by adding or removing shards.
+
+As data, users and transactions of Java applications keep increasing, sharding also works to improve the availability of data. I can use shards to replicate the data, and this reduces the risk of there being a single point of failure. I can also use this approach to simplify cloud deployment as each shard is small. It is also possible to use sharding to place sections of data in different regions, which improves data proximity.
+
+The risks of using sharding are an ineffective partitioning strategy that can reduce performance and my application will not work properly if I do not give it the data needed to locate the shards. Overall, sharding is a great approach as long as I manage the risks effectively.”
+
+48) Difference between git commit and git push ?
+Well, basically git commit puts your changes into your local repo, while git push sends your changes to the remote location.
+ git push is used to add commits you have done on the local repository to a remote one.
+ 
+49) TreeMap & HashMap Difference 
+HashMap is implemented as a hash table, and there is no ordering on keys or values. TreeMap is implemented based on red-black tree structure, and it is ordered by the key. 
+LinkedHashMap preserves the insertion order. Hashtable is synchronized in contrast to HashMap .
+
+https://www.baeldung.com/java-treemap-vs-hashmap
+
+50) JdbcTemplate is threadSafe ?
+ans) JdbcTemplate best practices
+Instances of the JdbcTemplate class are threadsafe once configured.
+This is important because it means that you can configure a single instance of a JdbcTemplate and then safely inject this shared reference into multiple DAOs (or repositories).
+The JdbcTemplate is stateful, in that it maintains a reference to a DataSource, but this state is not conversational state.
+
+ 51) Design Lending Machine in Java ?
+ 
+ Ans) 1) Item selection 2) quantity item name 3) price of item 4) insert money 5) dispatch item 6) return remaning money 
+ 
+ 7) feedback 
+ 
+ 
+    c,and c++ 
+	
+	1) database :- products ... list of products ..
+	2) item selection :- db 
+	3) select item button ok --> check stock cool drink logic availability logic ---> insert money message :- 100INR --- 
+	
+	calculate total price 100-500 = 400 INR -- logic -Give Back to user ..
+	
+	-- code to close the money cap 
+	-- feedback 1,2,3,4,5 -- skip ,-> save in db 
+	
+	thanks message --
+	
+	Card Swipe --- 
+	
+	
+	Logical Questions
+	
+	1) node 
+	
+	l   r -l r 
+	
+	l    
+	
+	ramehs is it developer 
+	
+	words -4 
+	
+	2) given one number  ex:- 10 ---> 1+2+3+4+5+6+7+8+9+10=55 
+	    3 --> 1+2+3 = 6
+	
+	3) Given number 10 --> if its odd then print Fizz - odd number 
+	if its even number prints Buzz -even number 
+	
+	
+	i%2==0 {
+	fizz-2
+	}
+	else {
+	
+	   buzz-3
+	}
+	
+	given num is multipled by 3 --> 9,6,10,15
+	
+	
+	10 --> 
+	
+	string s=hello im ram 
+	
+	
+	str = hello 
+	
+	result = hello/iam/ram  
+	
+		m 
+	
+	
+	
+	
+	
+	
+	
+	
+	if its prime number prints Fizz Buzz - prime number 
+	
+	
+	
+	
+ 
+
+  
+	
+	
+	
+	
+	
+    
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+  
+    
+  
+  
+
+
+
+	
+	
+
+
+
+  
+  
+  
+	 
+  
+  
+  
+  
+  
+  
+  
+  
